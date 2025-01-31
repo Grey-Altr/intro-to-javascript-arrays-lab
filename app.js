@@ -253,16 +253,22 @@ Complete Exercise 15 in the space below:
 
 let total = 0;
 
-const nestedArraySum = (arr) => {
-    arr.forEach(index => {
-        if (Array.isArray(index)) {
-            nestedArraySum(index);
-        } else {
-            total += index;
-        }
-    });
-}
 
-nestedArraySum(numArrays);
+// const nestedArraySum = (arr) => {
+//     arr.forEach(index => {
+//         if (Array.isArray(index)) {
+//             nestedArraySum(index);
+//         } else {
+//             total += index;
+//         }
+//     });
+//}
+//nestedArraySum(numArrays);
+
+numArrays.forEach((array) => {
+   array.forEach((num) => {
+      console.log(total += num);
+   });
+});
 
 console.log('Exercise 15 result:\n', total);
